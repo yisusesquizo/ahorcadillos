@@ -1,38 +1,63 @@
-<HTML>
-<DIV CLASS="CAJILLA">
-<BODY BGCOLOR="#FFFF00">
-	<H2>AHORCADO CON TEMATICA DEL TEC</H2>
-	Teclado
-	<BR>
-<BUTTON ID="A">A</BUTTON>
-<BUTTON ID="B">B</BUTTON>
-<BUTTON ID="C">C</BUTTON>
-<BUTTON ID="D">D</BUTTON>
-<BUTTON ID="E">E</BUTTON>
-<BUTTON ID="F">F</BUTTON>
-</DIV>
-<BUTTON ID="G">G</BUTTON>
-<BUTTON ID="H">H</BUTTON>
-<BUTTON ID="I">I</BUTTON>
-<BUTTON ID="J">J</BUTTON>
-<BUTTON ID="K">K</BUTTON>
-<BUTTON ID="L">L</BUTTON>
-<DIV>
-<BUTTON ID="M">M</BUTTON>
-<BUTTON ID="N">N</BUTTON>
-<BUTTON ID="O">O</BUTTON>
-<BUTTON ID="P">P</BUTTON>
-<BUTTON ID="Q">Q</BUTTON>
-<BUTTON ID="R">R</BUTTON>
-</DIV>
-<BUTTON ID="S">S</BUTTON>
-<BUTTON ID="T">T</BUTTON>
-<BUTTON ID="U">U</BUTTON>
-<BUTTON ID="V">V</BUTTON>
-<BUTTON ID="W">W</BUTTON>
-<BUTTON ID="X">X</BUTTON>
-</DIV>
-<BUTTON ID="Y">Y</BUTTON>
-<BUTTON ID="Z">Z</BUTTON>
-</DIV> 
-<HR HEIGHT="1000PX">
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ahorcado TEC</title>
+</head>
+
+<body bgcolor="#FFFF00">
+
+    <div class="cajilla">
+        <h2>AHORCADO CON TEMÁTICA DEL TEC</h2>
+
+        <p>Teclado</p>
+
+        <div>
+            <button id="A" onclick="jugar('A')">A</button>
+            <button id="B" onclick="jugar('B')">B</button>
+            <button id="C" onclick="jugar('C')">C</button>
+            <button id="D" onclick="jugar('D')">D</button>
+            <button id="E" onclick="jugar('E')">E</button>
+            <button id="F" onclick="jugar('F')">F</button>
+        </div>
+
+        <div>
+            <button id="G" onclick="jugar('G')">G</button>
+            <button id="H" onclick="jugar('H')">H</button>
+            <button id="I" onclick="jugar('I')">I</button>
+            <button id="J" onclick="jugar('J')">J</button>
+            <button id="K" onclick="jugar('K')">K</button>
+            <button id="L" onclick="jugar('L')">L</button>
+        </div>
+
+        <div>
+            <button id="M" onclick="jugar('M')">M</button>
+            <button id="N" onclick="jugar('N')">N</button>
+            <button id="O" onclick="jugar('O')">O</button>
+            <button id="P" onclick="jugar('P')">P</button>
+            <button id="Q" onclick="jugar('Q')">Q</button>
+            <button id="R" onclick="jugar('R')">R</button>
+        </div>
+
+        <div>
+            <button id="S" onclick="jugar('S')">S</button>
+            <button id="T" onclick="jugar('T')">T</button>
+            <button id="U" onclick="jugar('U')">U</button>
+            <button id="V" onclick="jugar('V')">V</button>
+            <button id="W" onclick="jugar('W')">W</button>
+            <button id="X" onclick="jugar('X')">X</button>
+            <button id="Y" onclick="jugar('Y')">Y</button>
+            <button id="Z" onclick="jugar('Z')">Z</button>
+        </div>
+
+        <hr>
+
+        <h3 id="palabra"></h3>
+        <p id="error"></p>
+        <h3 id="msj"></h3>
+    </div>
+
+    <script src="ahorcadin.js"></script>
+
+</body>
+</html>
